@@ -4,5 +4,6 @@ do
   config = _obj_0.config
 end
 return config("heroku", function()
-  return port(os.getenv("PORT"))
+  port(os.getenv("PORT"))
+  return postgresql_url(os.getenv("HEROKU_POSTGRESQL_COPPER_URL"))
 end)
