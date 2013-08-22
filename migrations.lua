@@ -1,6 +1,6 @@
 local create_table, types
 do
-  local _obj_0 = require("lapis.schema")
+  local _obj_0 = require("lapis.db.schema")
   create_table, types = _obj_0.create_table, _obj_0.types
 end
 return {
